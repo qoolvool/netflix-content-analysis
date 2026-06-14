@@ -1,70 +1,83 @@
-netflix-content-analysis
-netflix content analysis for portfolio
 
-readme_content = "https://www.kaggle.com/datasets/shivamb/netflix-shows" Netflix Movies and TV Shows
 
- Описание проекта
+Project Description:
 
-Анализ датасета Netflix с более чем 8,800 фильмами и сериалами. Проект демонстрирует:
-- Очистку данных (удаление некорректных значений)
+Analysis of a Netflix dataset containing over 8,800 movies and TV shows. This project demonstrates:
+- Data Cleaning (removing incorrect values)
 - Exploratory Data Analysis (EDA)
-- Визуализацию результатов анализа
+- Data Visualization
 
- Ключевые вопросы
+Dataset Source: Kaggle - Netflix Movies and TV Shows (https://www.kaggle.com/datasets/shivamb/netflix-shows)
 
-1. Какой процент фильмов vs сериалов на Netflix?
-2. Какие жанры самые популярные?
-3. Какие страны продуцируют больше контента?
-4. Как изменялось количество контента по годам?
-5. Какие рейтинги контента преобладают?
+Key Questions:
 
- Основные инсайты
+1. What percentage of Netflix content is movies vs TV shows?
+2. Which genres are the most popular?
+3. Which countries produce the most content?
+4. How has the amount of content changed over the years?
+5. Which content ratings dominate?
 
- Фильмы vs Сериалы:
-- Фильмы: 69.6% (6,128 шт.)
-- Сериалы: 30.4% (2,676 шт.)
-- Netflix ориентирован на контент для фильмов
+Main Insights:
 
- Топ Жанры:
+ Movies vs TV Shows:
+- Movies: 69.6% (6,128 titles)
+- TV Shows: 30.4% (2,676 titles)
+- Netflix focuses primarily on movie content
+
+ Top Genres:
 1. International Movies (2,752) - 31.2%
 2. Dramas (2,427) - 27.6%
 3. Comedies (1,674) - 19.0%
 
-Драмы и комедии - основной контент Netflix
-
- Топ Страны:
+ Top Countries:
 1. United States (3,686) - 41.8%
 2. India (1,046) - 11.9%
 3. United Kingdom (804) - 9.1%
 
-США доминирует в производстве контента для Netflix:
+ Content Ratings:
+- TV-MA (3,207) - Adult audiences
+- TV-14 (2,160) - Teen audiences
+- TV-PG (863) - Family content
 
- Рейтинги:
-- TV-MA (3,207) - для взрослой аудитории
-- TV-14 (2,160) - подростковый контент
-- TV-PG (863) - семейный контент
+ Yearly Trends:
+- Peak: 2018 (1,147 new releases)
+- Growth: Exponential increase from 2012-2018
+- Decline: Content additions slowed after 2018
 
-Большая часть контента рассчитана на взрослых:
 
- Тренды по годам:
-- Пик: 2018 год (1,147 новых релизов)
-- Тренд: Экспоненциальный рост с 2012 по 2018
-- Снижение: После 2018 года контент стал добавляться менее активно
+Data Cleaning Process
 
- Процесс очистки данных:
+Issue: Column "rating" contained incorrect values like "74 min", "84 min", "66 min"
 
-Проблема: В колонке "rating" найдены значения "74 min", "84 min", "66 min"
+Solution: Removed 3 rows with invalid data
 
-Решение: Удалены 3 строки с некорректными данными
+Result:
+- Before: 8,807 records
+- After: 8,804 records
+- Removed: 3 invalid entries
 
-Результат: 
-- До: 8,807 записей
-- После: 8,804 записей
-- Удалено: 3 невалидные записи
 
- Используемые инструменты:
+
+Tools & Libraries
 
 - Python 3.x
-- pandas - обработка данных
-- matplotlib - статические графики
-- seaborn - улучшенная визуализация
+- pandas - Data processing and analysis
+- matplotlib - Static visualizations
+- seaborn - Enhanced data visualization
+
+
+
+
+Key Conclusions
+
+1. Netflix is movie-focused - 70% of content is movies
+2. Adult content dominates - TV-MA and TV-14 make up 76% of all content
+3. USA is the main source - Over 40% of all content comes from the United States
+4. Dramas and comedies are popular - These genres make up ~47% of all content
+5. Content growth has slowed - After 2018, the rate of new content additions decreased
+
+
+
+Author: Vadim Kulikov
+
+Portfolio project for Junior Data Analyst position
